@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBI GAMING</title>
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="shortcut icon" href="https://yt3.googleusercontent.com/BZzVMyNPLLE1qpxthtUs1KHFK_eNZuxk8-KK3d4YH6eNhUFZ5L08XfyK2xJoK3nyAZgr0mhzJHA=s900-c-k-c0x00ffffff-no-rj"  type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/syntax.css" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div id="container">
+            <div id="content__header">
+                <div class="logo__header">
+                    <img src="https://yt3.googleusercontent.com/BZzVMyNPLLE1qpxthtUs1KHFK_eNZuxk8-KK3d4YH6eNhUFZ5L08XfyK2xJoK3nyAZgr0mhzJHA=s900-c-k-c0x00ffffff-no-rj" alt="" class="logoimg">
+                </div>
+                <div class="menu__header">
+                    <nav>
+                        <ul class="nav__link">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Sản phẩm</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="login-header">
+                    <button class="login">
+                        Đăng nhập
+                    </button> 
+                    <button class="register">Đăng Ký</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- slides -->
+    <!-- áp pích quảng cáo -->
+    <!-- thẻ ảnh quảng cáo -->
+    <div class="item">
+       <img src="./img/images (1).jpg" alt="" class="imgitem">
+    </div>
+    <section class="slide__body">
+        <div class="container">
+            <div class="container_slide">
+                <div class="slides">  
+                </div>
+        </div>
+    </section>
+    <!-- end slides -->
+    <!-- Body product one -->
+    <section class="body_product">
+        <div class="container">
+            <div class="title"><h3>Sản phẩm bán chạy</h3></div>
+            <div class="show_product">
+                <style>
+                    .modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        z-index: 9999;
+                    }
+                
+                    .modal-content {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+                
+                    .modal-content button {
+                        margin: 10px;
+                    }
+                </style>
+                
+
+
+
+                <div class="card">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/photo_2022-09-28_21-58-51_8.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>iPhone 14 512GB | Chính hãng VN/A</h3>
+                            <p>24.990.000 ₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="button">
+                            <a href="#" id="buyButton">Mua</a>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <h3>Lựa chọn của bạn</h3>
+                        <div class="button-group">
+                            <input type="number" id="quantity" class="input-quantity" placeholder="Số lượng">
+                            <button onclick="addToCart()" class="btn-add-to-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="button-group">
+                            <button onclick="deleteItem()" class="btn-delete">Xóa</button>
+                            <button onclick="editItem()" class="btn-edit">Sửa</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton = document.getElementById("buyButton");
+                
+                    buyButton.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                
+                <div class="card" id="card1">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/samsung-galaxy-a34-5g-bac-thumb-200x200.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Samsung Galaxy A34 5G 256GB</h3>
+                            <p>9.490.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton1">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton1 = document.getElementById("buyButton1");
+                
+                    buyButton1.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    // Các hàm xử lý sự kiện addToCart, deleteItem, editItem ở trên
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                
+
+                <div class="card" id="card2">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/oppo-a57-128gb-200722-044746-200x200.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại OPPO A57 128GB</h3>
+                            <p>4.590.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton2">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton2 = document.getElementById("buyButton2");
+                
+                    buyButton2.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    // Các hàm xử lý sự kiện addToCart, deleteItem, editItem ở trên
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                
+
+                <div class="card" id="card3">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/xiaomi-redmi-note-12-4g-mono-xanh-200x200.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Xiaomi Redmi Note 12 8GB</h3>
+                            <p>5.490.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="button">
+                            <a href="#" id="buyButton3">Mua</a>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton3 = document.getElementById("buyButton3");
+                
+                    buyButton3.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    // Các hàm xử lý sự kiện addToCart, deleteItem, editItem ở trên
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                
+                <div class="card" id="card4">        
+                    <div class="items">        
+                        <div class="image">
+                            <img src="/img/1922714375.jpeg" alt="">        
+                        </div>             
+                        <div class="text">
+                            <h3>Điện thoại iPhone 11 64GB</h3>             
+                            <p>10.290.000₫</p>        
+                        </div>        
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>        
+                        </div>        
+                        <div class="button">
+                            <a href="#" id="buyButton4">Mua</a>
+                            <a href="#">Xem chi tiết</a>        
+                        </div>             
+                    </div>
+                </div>
+
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton4 = document.getElementById("buyButton4");
+
+                    buyButton4.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+
+
+                <div class="card" id="card5">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/xiaomi-redmi-12c-green-thumb-200x200.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Xiaomi Redmi 12C 64GB </h3>
+                            <p>2.850.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#"id="buyButton5">MUA</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton5 = document.getElementById("buyButton5");
+
+                    buyButton5.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+
+                
+                <div class="card" id ="card6">
+                    <div class="items">
+                        <div class="image">
+                            <img src="/img/iphone-14-pro-max-bac-thumb-200x200.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại iPhone 14 Pro Max 128GB</h3>
+                            <p>27.090.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton6">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton6 = document.getElementById("buyButton6");
+
+                    buyButton6.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card7">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/4/_/4_187_1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>iPhone 11 128GB I Chính hãng VN/A</h3>
+                            <p>12.050.000 ₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton7">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton7 = document.getElementById("buyButton7");
+
+                    buyButton7.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card"id="card8">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/303583/samsung-galaxy-a34-5g-bac-thumb-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Samsung Galaxy A34 5G 8GB 128GB</h3>
+                            <p>8.490.000 </p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton8">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton8 = document.getElementById("buyButton8");
+
+                    buyButton8.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card"id=card9>
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/282903/xiaomi-13-pro-thumb-1-2-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Xiaomi 13 Pro 5G</h3>
+                            <p>23.790.000₫</p>
+                        </div>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton9">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton9 = document.getElementById("buyButton9");
+
+                    buyButton9.addEventListener("click", openModal);
+
+                    function openModal(event) {
+                            event.preventDefault();
+                            modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                            modal.style.display = "none";
+                    }
+
+                    function addToCart() {
+                            closeModal();
+                    // Xử lý logic thêm vào giỏ hàng
+                            console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+
+                    function deleteItem() {
+                            closeModal();
+                    // Xử lý logic xóa sản phẩm
+                            console.log("Sản phẩm đã bị xóa.");
+                    }
+
+                    function editItem() {
+                            closeModal();
+                    // Xử lý logic sửa thông tin sản phẩm
+                            console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- end Body product one -->
+     <!-- Body product discount -->
+     <section class="body_product discount">
+        <div class="container">
+            <div class="title"><h3>Sản phẩm khuyến mãi</h3></div>
+            <div class="show_product">
+                <div class="card" id="card10">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/239748/nokia-c30-xam-1-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Nokia C30</h3>
+                            <span><s>3.350.000₫</s></span>
+                            <span>1.950.000₫</span>
+                        </div>
+                        <span class="discount">-41%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton10">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton10 = document.getElementById("buyButton10");
+                
+                    buyButton10.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card11">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/3/13_prooo.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại Xiaomi 13 Pro 5G</h3>
+                            <span><s> 2.190.000₫ </s></span>
+                            <span>1.880.000₫</span>
+                        </div>
+                        <span class="discount">-20%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton11">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton11 = document.getElementById("buyButton11");
+                
+                    buyButton11.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card12">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/247364/samsung-galaxy-m53-xanh-la-thumb-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Samsung Galaxy M53</h3>
+                            <span><s>10.990.000₫</s></span>
+                            <span>8.290.000₫</span>
+                        </div>
+                        <span class="discount">-24%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton12">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton12 = document.getElementById("buyButton12");
+                
+                    buyButton12.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card13">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/250622/oppo-find-x5-pro-trang-thumb-200x200.jpg" alt="">    
+                        </div>
+                        <div class="text">
+                            <h3>OPPO Find X5 Pro 5G</h3>
+                            <span><s>32.990.000₫</s></span>
+                            <span>24.990.000₫</span>
+                        </div>
+                        <span class="discount">-24%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton13">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton13 = document.getElementById("buyButton13");
+                
+                    buyButton13.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card14">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2022/02/09/image-removebg-preview-11.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Samsung Galaxy S22 Ultra (8GB - 128GB)</h3>
+                            <span><s>30.990.000₫</s></span>
+                            <span>22.990.000 ₫</span>
+                        </div>
+                        <span class="discount">26%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton14">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton14 = document.getElementById("buyButton14");
+                
+                    buyButton14.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card15">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-xanh-la-thumb-2-1-1-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Điện thoại iPhone 13 128GB </h3>
+                            <span><s> 18.990.000₫ </s></span>
+                            <span>17.190.000₫ </span>
+                        </div>
+                        <span class="discount">-9%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton15">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton15 = document.getElementById("buyButton15");
+                
+                    buyButton15.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card16">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/301642/oppo-reno8-t-5g-256gb-250123-075345-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>OPPO RENO8 T 256GB Chính Hãng</h3>
+                            <span><s>8.490.000 ₫</s></span>
+                            <span>7.550.000 ₫</span>
+                        </div>
+                        <span class="discount">-10%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton16">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton16 = document.getElementById("buyButton16");
+                
+                    buyButton16.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card17">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://energizer.dtr.vn/cache/upload/auto/Spec_UE2001001.jpg-500x350.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Pin sạc dự phòng Energizer 20.000mAh /3.7V Li-Polymer UE20010</h3>
+                            <span><s>850.000 ₫</s></span>
+                            <span>550.000 ₫</span>
+                        </div>
+                        <span class="discount">35%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton17">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton17 = document.getElementById("buyButton17");
+                
+                    buyButton17.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card18">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2022/02/09/image-removebg-preview-7.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Samsung Galaxy S22 (8GB - 128GB)</h3>
+                            <span>21.990.000<s></s></span>
+                            <span>15.990.000</span>
+                        </div>
+                        <span class="discount">20%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton18">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton18 = document.getElementById("buyButton18");
+                
+                    buyButton18.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+                <div class="card" id="card19">
+                    <div class="items">
+                        <div class="image">
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_75/https://cdn.tgdd.vn/Products/Images/42/271697/Galaxy-S22-Ultra-Black-200x200.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Samsung Galaxy S22 Ultra (12GB - 256GB) - Độc quyền</h3>
+                            <span><s>33.990.000 ₫</s></span>
+                            <span>22.290.000 ₫</span>
+                        </div>
+                        <span class="discount">37%</span>
+                        <div class="color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="button">
+                        <a href="#" id="buyButton19">Mua</a>
+                        <a href="#">Xem chi tiết</a>
+                       </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("modal");
+                    var buyButton19 = document.getElementById("buyButton19");
+                
+                    buyButton19.addEventListener("click", openModal);
+                
+                    function openModal(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+                
+                    function closeModal() {
+                        modal.style.display = "none";
+                    }
+                
+                    function addToCart() {
+                        closeModal();
+                        // Xử lý logic thêm vào giỏ hàng
+                        console.log("Sản phẩm đã được thêm vào giỏ hàng.");
+                    }
+                
+                    function deleteItem() {
+                        closeModal();
+                        // Xử lý logic xóa sản phẩm
+                        console.log("Sản phẩm đã bị xóa.");
+                    }
+                
+                    function editItem() {
+                        closeModal();
+                        // Xử lý logic sửa thông tin sản phẩm
+                        console.log("Sản phẩm đã được sửa.");
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- end Body product discount -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="name_website">BIBI GAMING</h3>
+                    <div>
+                        <img src="uploads/Group.png" alt="">
+                    </div>
+                    <p>
+                      <h4>UY TÍN CHẤT LƯỢNG GIÁ RẺ</h4>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3 class="title">TRUY CẬP NHANH</h3>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h3 class="title">HỖ TRỢ KHÁCH HÀNG</h3>
+                    <ul>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách đổi trả hàng</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyriht">WEBSITE DESIGN BY BIBI GAMING</p>
+    </footer>
+
+
+
+
+</body>
+</html>
